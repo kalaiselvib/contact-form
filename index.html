@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+
+ <link rel="stylesheet" href= 
+ "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+           integrity= 
+ "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+           crossorigin="anonymous" /> 
+
+ <!-- Font Awesome 5 -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" />
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-container d-flex justify-content-center align-items-center">
+        <div class="contact-wrapper">  
+            <div class="heading text-center">
+                <h1>Say Hello! </h1>
+            </div>
+            
+            <div class="form d-flex flex-column justify-content-center align-items-center">
+                <form action="">
+                    <div class="form-input">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" class="input-item">
+                    </div>
+                    <div class="form-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" class="input-item">
+                </div>
+                <div class="form-input">
+                    <label for="services">Needed Services</label>
+                    <select name="services" id="services" class="input-item">
+                        <option value="choose">Choose Services</option>
+                        <option value="online">Online Store</option>
+                        <option value="ecomm">Ecommerce Business</option>
+                        <option value="uiux">UI/UX Design</option>
+                    </select>
+                </div>
+                  <div class="form-input">
+                    <label for="budget">Budget</label>
+                    <select name="budget" id="budget" class="input-item">
+                        <option value="select">Select Budget</option>
+                        <option value="1000">$1000</option>
+                        <option value="1500">1500</option>
+                        <option value="2000">2000</option>
+                      
+                    </select>
+                  </div>
+                  <div class="form-input">
+                    <label for="message">Message</label>
+                      <textarea name="message" id="message" cols="50" rows="5" class="input-item"></textarea>
+                  </div>
+                  <div class="form-input d-flex justify-content-center align-items-center">
+                    <input type="submit" value="Submit" id="submit" class="submit font-weight-bold">
+                  </div>
+                </form>
+        
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
